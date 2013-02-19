@@ -1,0 +1,1 @@
+..\dwiri_env\Scripts\activate
