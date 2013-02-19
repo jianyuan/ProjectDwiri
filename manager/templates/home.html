@@ -1,0 +1,9 @@
+<h1>List of Nodes</h1>
+{% for node in nodes %}
+    <h2>{{ node.name }}</h2>
+    <ul>
+        {% for point in node.datapoint_set.all %}
+            <li>{{ point }} - {{ point.created|timesince }} ago</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
